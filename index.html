@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css">
+
+   <link rel="stylesheet" href="style.css">
+
+
+
+   <title>Workout Planner App</title>
+</head>
+<body>
+<div class="container mt-4">
+   <h1 class="display-4 text-center">
+      <i class="fas fa-dumbbell"></i><span class="text-primary"> <b>Workout</b></span> Planner<h1>
+      <form id="workout-form">
+         <div class="form-group">
+            <label for="exercise">Exercise</label>
+            <input type="text" id="exercise" class="form-control">
+         </div>
+         <div class="form-group">
+               <label for="weight">Weight</label>
+               <input type="text" id="weight" class="form-control">
+         </div>
+         <div class="form-group">
+            <label for="reps">Repetition</label>
+            <input type="text" id="reps" class="form-control">
+         </div>
+         <div class="form-group">
+            <label for="sets">Sets</label>
+            <input type="text" id="sets" class="form-control">
+         </div>
+         <input type="submit" value="Add to Workout" class="btn btn-primary btn-block mt-4 button-text">
+      </form>
+
+      <table class="table table-striped mt-5 table-text">
+         <thead>
+            <tr>
+               <th>Exercise</th>
+               <th>Weight</th>
+               <th>Repetition</th>
+               <th>Sets</th>
+               <th></th>
+            </tr>
+         </thead>
+         <tbody id="workout-list"></tbody>
+      </table>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
